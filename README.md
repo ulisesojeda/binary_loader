@@ -1,4 +1,5 @@
-# Run VIM and Busybox as a Python module in Linux/x86_64 systems
+# Run VIM/Busybox and remote binaries accesible by http/https/ftp
+# as a Python module in Linux/x86_64 systems
 
 Motivation: run programs not available in restricted environments where
 any package can be installed by **pip**
@@ -12,12 +13,17 @@ pip install binloader
 ## Usage:
 ### Vim
 ```bash
-python -m binloader vim /etc/passwd
+[python](python) -m binloader --local vim /etc/passwd
 ```
 
 ### Busybox
 ```bash
-python -m binloader busybox uname -a
+python -m binloader --local busybox uname -a
+```
+
+### Remote binary
+```bash
+python -m binloader  --remote https://github.com/dtschan/vim-static/releases/download/v8.1.1045/vim --app vim /etc/passwd
 ```
 
 ### ToDo
