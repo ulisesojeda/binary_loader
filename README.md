@@ -12,7 +12,7 @@ pip install binloader
 ## Usage:
 ### Vim
 ```bash
-[python](python) -m binloader --local vim /etc/passwd
+python -m binloader --local vim /etc/passwd
 ```
 
 ### Busybox
