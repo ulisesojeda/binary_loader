@@ -25,6 +25,16 @@ python -m binloader --local busybox uname -a
 python -m binloader  --remote https://github.com/dtschan/vim-static/releases/download/v8.1.1045/vim --app vim /etc/passwd
 ```
 
+### Run the binary from memory. Might be useful if there is no permissions to create/write files
+```bash
+python -m binloader --on_memory --local busybox id
+```
+
+### Local development. Run tests
+```bash
+python tests/tests.py
+```
+
 ### ToDo
 1. Support for other OS/architectures
 2. Add other binaries

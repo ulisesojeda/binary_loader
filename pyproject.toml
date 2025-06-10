@@ -1,6 +1,6 @@
 [project]
 name = "binloader"
-version = "0.0.2"
+version = "0.0.3"
 description = "Run VIM and Busybox. Optionally run remote binaries"
 authors = [{ name="Ulises", email="ulises.odysseus22@gmail.com" }]
 readme = "README.md"
